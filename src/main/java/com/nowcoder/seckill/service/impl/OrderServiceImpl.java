@@ -72,7 +72,8 @@ public class OrderServiceImpl implements OrderService, ErrorCode {
         }
 
         // 校验用户
-        User user = userService.findUserById(userId);
+//        User user = userService.findUserById(userId);
+        User user = userService.findUserFromCache(userId);
         if (user == null) {
             throw new BusinessException(PARAMETER_ERROR, "指定的用户不存在！");
         }
@@ -123,5 +124,7 @@ public class OrderServiceImpl implements OrderService, ErrorCode {
 
         return order;
     }
+
+
 
 }

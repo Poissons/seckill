@@ -5,7 +5,7 @@
 <generatorConfiguration>
     <context id="simple" targetRuntime="MyBatis3Simple">
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://139.9.119.64:3306/seckill?characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=Hongkong"
+                        connectionURL="jdbc:mysql://124.70.108.66:3306/seckill?characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=Hongkong"
                         userId="root" password="123456"/>
 
         <javaModelGenerator targetPackage="com.nowcoder.seckill.entity" targetProject="src/main/java">

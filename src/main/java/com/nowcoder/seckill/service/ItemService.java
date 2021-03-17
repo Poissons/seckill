@@ -10,8 +10,14 @@ public interface ItemService {
 
     Item findItemById(int id);
 
-    boolean decreaseStock(int itemId, int amount);
+    Item findItemInCache(int id);
 
     void increaseSales(int itemId, int amount);
+
+    boolean decreaseStock(int itemId, int amount);
+
+    boolean decreaseStockInCache(int itemId, int amount);
+
+    boolean increaseStockInCache(int itemId, int amount);
 
 }
